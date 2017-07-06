@@ -16,7 +16,7 @@ class App extends React.Component {
 				<Header message={this.state.pageHeader} />
 				<div>
 					{this.props.contests.map(contest =>
-						<ContestPreview {...contest} />
+						<ContestPreview {...contest} key={contest.id} />
 					)}
 				</div>
 			</div>
