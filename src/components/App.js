@@ -6,7 +6,7 @@ import ContestPreview from './ContestPreview';
 class App extends React.Component {
 	state = {
 		pageHeader: 'Naming Contests',
-		contests: []
+		contests: this.props.initialContests
 	};
 	componentDidMount() {
 		axios.get('/api/contests')
@@ -26,7 +26,7 @@ class App extends React.Component {
 				<Header message={this.state.pageHeader} />
 				<div>
 					{this.state.contests.map(contest =>
-						<ContestPreview {...contest} key={contest.id} />
+						<ContestPreview key={contest.id} {...contest} />
 					)}
 				</div>
 			</div>
