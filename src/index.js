@@ -1,25 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import App from './components/App';
+import App from './components/App'; 
 
-
-
-
-
-axios.get('/api/contests')
-	.then(resp => {
-		ReactDOM.render(
-			<App initialContests={resp.data.contests} />,
-			document.getElementById('root')
-		);
-	})
-	.catch(console.error);
-
-// ReactDOM.render(
-//   <App initialContests={[]} />,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+	<App initialContests={window.initialData.contests} />,
+	document.getElementById('root')
+);
 
 // cd Desktop
 // cd Root  
