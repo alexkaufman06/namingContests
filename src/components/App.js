@@ -9,9 +9,9 @@ const pushState = (obj, url) =>
   window.history.pushState(obj, '', url);
 
 class App extends React.Component {
-	static propTypes = {
-		initialData: PropTypes.object.isRequired
-	}
+	// static propTypes = {
+	// 	initialData: PropTypes.object.isRequired
+	// };
 	state = this.props.initialData;
 	componentDidMount() {
 
