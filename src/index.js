@@ -13,5 +13,5 @@ ReactDOM.render(
 // cd namingContests
 
 // npm run dev
+// mongod
 // npm start
-
