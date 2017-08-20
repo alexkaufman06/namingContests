@@ -19,7 +19,15 @@ ReactDOM.render(
 // WORKING WITH DATABASE
 // mongo <= in terminal
 // db.contests.count()
+
 // SHOW ALL NAMES BELOW
 // db.names.find({})
+
 // REMOVE NAME BELOW (will remove all)
 // db.names.remove( { "name": "Poopy Pants" } )
+
+// REMOVE ALL BELOW
+// db.names.remove({})
+
+// LOAD DATA INTO MONGO BELOW
+// babel-node loadTestData.js
